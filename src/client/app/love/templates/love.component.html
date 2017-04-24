@@ -1,0 +1,18 @@
+<div class="unicornLovePanel">
+    <div>
+        <span>Femelle</span>
+        <div class="unicornLoveList">
+            <div *ngFor="let femaleUnicorn of femaleUnicorns" (click)="selectedFemale = femaleUnicorn" [ngClass]="{'selected':selectedFemale === femaleUnicorn}">{{femaleUnicorn.name}}</div>
+        </div>
+    </div>
+    <div>
+        <span>Male</span>
+        <div class="unicornLoveList">
+            <div *ngFor="let maleUnicorn of maleUnicorns" (click)="selectedMale = maleUnicorn" [ngClass]="{'selected':selectedMale === maleUnicorn}">{{maleUnicorn.name}}</div>
+        </div>
+    </div>
+</div>
+<div>
+    <button (click)="love()">Let's go !</button>
+</div>
+<hr />

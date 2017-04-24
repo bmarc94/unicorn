@@ -1,0 +1,19 @@
+<h3>Cliquez sur la "licorne"" pour plus de détail</h3>
+
+<div class="detail" *ngIf="selectedUnicorn">
+    <label>Nom : </label><span>{{selectedUnicorn.name}}</span>
+    <br />
+    <label>Age : </label> {{selectedUnicorn.age}}
+    <br />
+    <label>Sexe : </label> {{selectedUnicorn.gender}}
+    <br />
+    <label>Couleur : </label>
+    <div [ngStyle]="{'background-color': getColor(selectedUnicorn),'width':'20px','height':'20px'}"></div>
+    <br />
+</div>
+
+<div class="unicornList" *ngFor="let unicorn of unicorns" [ngStyle]="{
+    'background-color': getColor(unicorn)}" (click)="selectedUnicorn = unicorn" [ngClass]="{'selected':selectedUnicorn === unicorn}">
+
+    <div>{{unicorn.name}}</div>
+</div>

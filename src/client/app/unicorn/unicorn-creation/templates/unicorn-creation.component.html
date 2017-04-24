@@ -1,0 +1,22 @@
+<div>
+    <form (submit)="add(this)">
+        <label>Nom :</label><br />
+        <input value="" type="text" class="form-control" required [(ngModel)]="model.name" name="name" #name="ngModel" />
+        <br />
+        <label>Age :</label><br />
+        <input value="" type="text" class="form-control" required [(ngModel)]="model.age" name="age" #name="ngModel" />
+        <br />
+        <label>Sexe :</label><br />
+        <select value="M" type="text" class="form-control" required [(ngModel)]="model.gender" name="gender" #name="ngModel">
+            <option value="M">Male</option>
+            <option value="F">Femelle</option>
+        </select>
+        <br />
+        <label>Couleur :</label><br />
+        <input value="" type="text" class="form-control" required [(ngModel)]="model.color" name="color" #name="ngModel" length=6/>
+        <br />
+        <br />
+        <button type="submit">Ajouter</button>
+
+    </form>
+</div>

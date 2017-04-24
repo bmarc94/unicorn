@@ -1,0 +1,9 @@
+<button (click)="addPanel=!addPanel">
+  <span [hidden]="addPanel">Ajouter Licorne</span>
+  <span [hidden]="!addPanel">Fermer</span>
+</button>
+<div [hidden]="!addPanel">
+    <unicorn-creation></unicorn-creation>
+</div>
+<hr />
+<unicorn-list></unicorn-list>

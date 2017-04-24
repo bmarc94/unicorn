@@ -1,0 +1,23 @@
+div.unicornLoveList {
+    position: relative;
+    margin: 20px;
+    width: 300px;
+    border-radius: 5px;
+    border: solid 1px;
+    list-style: none;
+}
+
+div.unicornLoveList div {
+    position: relative;
+    width: 100%;
+    cursor: default;
+    padding: 5px;
+}
+
+div.unicornLoveList div.selected {
+    background: #106cc8;
+}
+
+button.hidden {
+    display: none;
+}

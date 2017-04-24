@@ -1,0 +1,37 @@
+h3 {
+    color: #106cc8;
+    padding: 20px;
+}
+
+div.unicornList {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    width: 300px;
+    background-color: #607D8B;
+    border-radius: 5px;
+}
+
+div.unicornList div {
+    position: relative;
+    background: #106cc8;
+    border-radius: 50%;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+div.detail {
+    padding: 20px;
+    margin: 20px;
+    border: #106cc8 solid 2px;
+}
+
+div.selected div {
+    background: #000000;
+}
+
+form {
+    margin: 50px;
+}
